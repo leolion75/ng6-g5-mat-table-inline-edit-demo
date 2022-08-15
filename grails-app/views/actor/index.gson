@@ -1,0 +1,25 @@
+import com.nxp.gps.dvdrental.Actor
+import grails.core.*
+import grails.util.*
+import grails.plugins.*
+import org.grails.core.artefact.*
+
+model {
+	List<Actor> actors
+	Integer count
+}
+
+json {
+	total count
+	if (actors) {
+		actors(actors) {Actor a->
+			id a.id
+			firstName a.firstName
+			lastName a.lastName
+			lastUpdate a.lastUpdate
+			foo "bar"
+		}
+	}
+
+    totalCount count
+}

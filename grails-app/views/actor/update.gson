@@ -1,0 +1,20 @@
+import com.nxp.gps.dvdrental.Actor
+import grails.core.*
+import grails.util.*
+import grails.plugins.*
+import org.grails.core.artefact.*
+
+model {
+	boolean success
+	Actor actor
+}
+
+json {
+	success success
+	data {
+		id actor.id
+		firstName actor.firstName
+		lastName actor.lastName
+		lastUpdate actor.lastUpdate
+	}
+}
