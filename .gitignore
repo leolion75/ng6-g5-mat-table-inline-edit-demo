@@ -10,3 +10,15 @@ out/
 .project
 .settings
 .classpath
+/src/main/webapp/index.html
+/src/main/webapp/main.js
+/src/main/webapp/polyfills.js
+/src/main/webapp/runtime.js
+/src/main/webapp/styles.js
+/src/main/webapp/vendor.js
+/devDb.mv.db
+/src/main/webapp/vendor.js.map
+/src/main/webapp/styles.js.map
+/src/main/webapp/runtime.js.map
+/src/main/webapp/polyfills.js.map
+/src/main/webapp/main.js.map
